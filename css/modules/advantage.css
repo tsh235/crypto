@@ -1,0 +1,109 @@
+.advantage__list-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 54px;
+}
+.advantage__btn {
+  width: 180px;
+  height: 47px;
+  padding: 0 10px;
+  border-radius: 20px;
+  background-color: #68B7FF;
+  border: 1px solid transparent;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFF;
+}
+.advantage__btn:hover,
+.advantage__btn:focus-visible {
+  border-color: #1C88EB;
+}
+.advantage__btn:active,
+.advantage__btn_active {
+  background-color: #1C88EB;
+}
+.advantage__btn_active {
+  cursor: default;
+  pointer-events: none;
+}
+.advantage__content-item {
+  max-width: 640px;
+  margin: 0 auto;
+  display: none;
+  gap: 40px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #000;
+}
+.advantage__content-item_active {
+  display: flex;
+  align-items: center;
+}
+.advantage__content-item::before {
+  content: '';
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.advantage__content-item_convenience::before {
+  background-image: url('../../img/convenience.svg');
+}
+.advantage__content-item_speed::before {
+  background-image: url('../../img/speed.svg');
+}
+.advantage__content-item_quality::before {
+  background-image: url('../../img/quality.svg');
+}
+.advantage__content-item_security::before {
+  background-image: url('../../img/security.svg');
+}
+
+@media (max-width: 860px) {
+  .advantage__list-btn {
+    margin-bottom: 35px;
+  }
+  .advantage__btn {
+    width: 160px;
+    height: 39px;
+    font-size: 16px;
+  }
+  .advantage__content-item {
+    max-width: 560px;
+    gap: 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  .advantage__list-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 340px;
+    margin: 0 auto 30px;
+  }
+  
+  .advantage__content-item {
+    gap: 20px;
+  }
+  .advantage__content-item::before {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advantage__content-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .advantage__btn {
+    width: 140px;
+  }
+}
