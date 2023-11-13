@@ -36,7 +36,7 @@
 }
 
 .hero {
-  background: #000 url('../../img/bg.jpg');
+  background: #000 url('../img/bg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -133,16 +133,16 @@
   background-size: contain;
 }
 .advantage__content-item_convenience::before {
-  background-image: url('../../img/convenience.svg');
+  background-image: url('../img/convenience.svg');
 }
 .advantage__content-item_speed::before {
-  background-image: url('../../img/speed.svg');
+  background-image: url('../img/speed.svg');
 }
 .advantage__content-item_quality::before {
-  background-image: url('../../img/quality.svg');
+  background-image: url('../img/quality.svg');
 }
 .advantage__content-item_security::before {
-  background-image: url('../../img/security.svg');
+  background-image: url('../img/security.svg');
 }
 
 .exchange-rates {
@@ -182,10 +182,10 @@
   background-size: contain;
 }
 .exchange-rates__item_up::after {
-  background-image: url('../../img/up.svg');
+  background-image: url('../img/up.svg');
 }
 .exchange-rates__item_down::after {
-  background-image: url('../../img/down.svg');
+  background-image: url('../img/down.svg');
 }
 .exchange-rates__currency {
   margin-right: auto;
